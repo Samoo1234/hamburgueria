@@ -1,0 +1,17 @@
+{
+  "name": "hamburgueria-supabase",
+  "version": "1.0.0",
+  "description": "Ferramentas e scripts para integração do Supabase no sistema de hamburgueria",
+  "main": "migration.js",
+  "scripts": {
+    "migrate": "node migration.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "dotenv": "^16.3.1",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

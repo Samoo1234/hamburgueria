@@ -1,0 +1,36 @@
+{
+  "name": "hamburgueria-sistema",
+  "version": "1.0.0",
+  "description": "Sistema completo para hamburgueria com módulo de atendimento presencial via dispositivos portáteis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "frontend": "cd frontend && npm start",
+    "garcom": "cd garcom-app && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../garcom-app && npm install",
+    "migrate": "node supabase/migration.js"
+  },
+  "keywords": [
+    "hamburgueria",
+    "restaurante",
+    "pedidos",
+    "garçom",
+    "atendimento"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "socket.io": "^4.7.2",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
