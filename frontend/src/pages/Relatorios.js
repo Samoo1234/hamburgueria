@@ -109,7 +109,7 @@ function Relatorios() {
         nome: g.nome,
         pedidos: Math.max(100 - index * 15, 30),
         valor: Math.max(5000 - index * 800, 1500),
-        avaliacao: Math.max(4.9 - index * 0.1, 4.3).toFixed(1)
+        avaliacao: Math.max(4.9 - index * 0.1, 4.3)
       }));
 
       setDados({
@@ -385,7 +385,7 @@ function Relatorios() {
                     <TableCell>{row.nome}</TableCell>
                     <TableCell align="right">{row.pedidos}</TableCell>
                     <TableCell align="right">{formatarValor(row.valor)}</TableCell>
-                    <TableCell align="right">{row.avaliacao.toFixed(1)}</TableCell>
+                    <TableCell align="right">{parseFloat(row.avaliacao).toFixed(1)}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
